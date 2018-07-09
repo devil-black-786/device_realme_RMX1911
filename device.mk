@@ -46,9 +46,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
-# ANT+
+#  ANT+
 PRODUCT_PACKAGES += \
     AntHalService
+
+#  Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.realme_sdm665
 
 # Fingerprint
 PRODUCT_PACKAGES += \
