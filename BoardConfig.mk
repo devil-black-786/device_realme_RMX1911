@@ -94,6 +94,12 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
+
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
@@ -135,7 +141,6 @@ BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 
 # Hack: prevent anti rollback
-PLATFORM_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
 # Inherit from the proprietary version
