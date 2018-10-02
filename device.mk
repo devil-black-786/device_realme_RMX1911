@@ -86,3 +86,7 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# TextClassifier
+PRODUCT_PACKAGES += \
+    textclassifier.bundle1
