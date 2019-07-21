@@ -7,3 +7,7 @@ on post-fs
 on boot
     chown system system proc/touchpanel/double_tap_enable
     chmod 0660 proc/touchpanel/double_tap_enable
+
+# Bind mount manifest.xml
+mount none /system/etc/manifest.xml /vendor/etc/vintf/manifest.xml bind
+
