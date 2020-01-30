@@ -105,6 +105,11 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# GPS
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
+GNSS_HIDL_VERSION := 2.0
+USE_DEVICE_SPECIFIC_GPS := true
+
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
