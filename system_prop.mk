@@ -59,3 +59,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=420 \
     ro.boot.avb_version=1.0 \
     ro.boot.vbmeta.avb_version=1.0
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q6125-17995-1
+
