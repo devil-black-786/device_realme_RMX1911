@@ -58,12 +58,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
 
+# Google
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase.ms=android-oppo-rev1
 
-# HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-
-# Telephony
+#Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
 
@@ -73,7 +72,10 @@ PRODUCT_BOOT_JARS += \
 # init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc \
-    init.recovery.qcom.rc
+    init.recovery.qcom.rc \
+    init.oppo.fingerprint.rc \
+    ueventd.rc
+
 
 # HotwordEnrollement
 PRODUCT_COPY_FILES += \
