@@ -22,6 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/realme/RMX1911/RMX1911-vendor.mk)
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -53,7 +57,7 @@ PRODUCT_PACKAGES += \
 #  Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.realme_sdm665
-
+ 
 # Fingerprint
 PRODUCT_PACKAGES += \
     vendor.oppo.hardware.biometrics.fingerprint@2.1 \
