@@ -28,6 +28,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-realme
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=RMX1911 \
     PRODUCT_NAME=RMX1911 \
-    PRIVATE_BUILD_DESC="coral-user 10 QQ2A.200305.003 6156912 release-keys"
+    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200605.001 6392402 release-keys"
 
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys"
