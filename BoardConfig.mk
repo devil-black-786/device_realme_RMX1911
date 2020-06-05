@@ -156,8 +156,5 @@ WIFI_DRIVER_STATE_ON := "ON"
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
-# Hack: prevent anti rollback
-PLATFORM_VERSION := 16.1.0
-
 # Inherit from the proprietary version
 -include vendor/realme/RMX1911/BoardConfigVendor.mk
