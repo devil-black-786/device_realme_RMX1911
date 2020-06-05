@@ -162,11 +162,10 @@ PRODUCT_BOOT_JARS += \
 
 # init scripts
 PRODUCT_PACKAGES += \
-    init.qcom.rc \
     init.recovery.qcom.rc \
     init.oppo.fingerprint.rc \
-    ueventd.rc
-
+    ueventd.rc \
+    init.target.rc \
 
 # HotwordEnrollement
 PRODUCT_COPY_FILES += \
