@@ -63,3 +63,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q6125-17995-1
 
+# Hack for Youtube
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.display-size=3840x2160
