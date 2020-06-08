@@ -108,6 +108,7 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
+-include $(LOCAL_PATH)/vendor_props.mk
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
