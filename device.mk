@@ -127,7 +127,9 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    libbthost_if
+    libbthost_if \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    android.hardware.bluetooth.a2dp@1.0-impl
 
 # Camera
 PRODUCT_PACKAGES += \
